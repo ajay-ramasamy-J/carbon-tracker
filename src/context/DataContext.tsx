@@ -337,10 +337,9 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
                     zIndex: 1000,
                     fontWeight: 600,
                     fontSize: '14px',
-                    maxWidth: '400px',
-                    animation: 'slideIn 0.3s ease-out'
+                    maxWidth: '400px'
                 }}>
-                    {notification.message}
+                    <span>{notification.message}</span>
                 </div>
             )}
         </DataContext.Provider>
