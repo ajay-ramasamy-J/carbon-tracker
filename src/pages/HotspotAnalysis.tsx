@@ -24,9 +24,8 @@ const HotspotAnalysis: React.FC = () => {
 
     return (
         <div className="page-wrapper fade-in" style={{ paddingTop: '0' }}>
-            <div className="page-header" style={{ marginBottom: '32px', border: 'none', padding: '0', background: 'none' }}>
-                <h1 className="page-title" style={{ fontSize: '32px', fontWeight: 800 }}>Hotspot Intelligence</h1>
-                <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Source: Uploaded dataset | Last updated: {lastUpdated}</div>
+            <div className="page-header">
+                <h1 className="page-title">Hotspot Intelligence</h1>
             </div>
 
             <div className="grid-2" style={{ gap: '32px' }}>

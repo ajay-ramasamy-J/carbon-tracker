@@ -22,18 +22,8 @@ const ViewsRecommendations: React.FC = () => {
 
     return (
         <div className="page-wrapper fade-in" style={{ paddingTop: '0' }}>
-            <div className="page-header" style={{ marginBottom: '32px', border: 'none', padding: '0', background: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
-                <div>
-                    <h1 className="page-title" style={{ fontSize: '32px', fontWeight: 800 }}>Views & Recommendations</h1>
-                    <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>Source: Uploaded dataset | Last updated: {lastUpdated}</div>
-                </div>
-                <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '10px', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>System Status</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: data.isFresh ? 'var(--yellow-primary)' : 'var(--green-primary)', fontWeight: 800, fontSize: '13px' }}>
-                        <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: data.isFresh ? 'var(--yellow-primary)' : 'var(--green-primary)', boxShadow: `0 0 10px ${data.isFresh ? 'var(--yellow-primary)' : 'var(--green-primary)'}` }}></div>
-                        {data.isFresh ? 'AWAITING DATA' : 'DATA ACTIVE'}
-                    </div>
-                </div>
+            <div className="page-header">
+                <h1 className="page-title">Views & Recommendations</h1>
             </div>
 
             {/* KPI Cards */}

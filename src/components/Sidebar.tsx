@@ -5,11 +5,12 @@ const Sidebar: React.FC = () => {
     const location = useLocation();
 
     const menuItems = [
-        { path: '/', label: 'Dashboard' },
+        { path: '/', label: 'Views & Recommendations' },
         { path: '/ingestion', label: 'Data Ingestion' },
         { path: '/calculation', label: 'Carbon Calculator' },
         { path: '/hotspot', label: 'Hotspot Analysis' },
         { path: '/audit', label: 'Audit & Trust' },
+        { path: '/recommendations', label: 'Mitigation Roadmap' },
     ];
 
     return (
