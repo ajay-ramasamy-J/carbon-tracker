@@ -1,6 +1,6 @@
 // API Configuration
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://carbon-tracker-004k.onrender.com/'  // Replace with your Render URL
+  ? 'https://carbon-tracker-004k.onrender.com'  // Remove trailing slash
   : 'http://localhost:8001';
 
 export const API_ENDPOINTS = {
